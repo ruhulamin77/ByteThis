@@ -3,6 +3,10 @@ body {
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
 }
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 .container {
   width: 1150px;
   margin: 0 auto;
@@ -195,4 +199,96 @@ nav {
 }
 .price-paragraph {
   margin-bottom: 50px;
+}
+
+/* Contact part Css */
+footer {
+  background-color: #41464b;
+}
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+.contact-left,
+.contact-right {
+  color: #fff;
+}
+.contact-left h3,
+.contact-right h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.social-icon {
+  padding: 0;
+}
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+}
+.social-icon li a {
+  color: #fff;
+  margin: 30px 30px 30px 0px;
+}
+.contact-info {
+  background-image: url(../img/world-map.png);
+}
+.contact-right {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+input,
+textarea {
+  outline: 0;
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* footer ottom */
+
+.footer-bottom {
+  background-color: #00000031;
+}
+.footer-bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright p {
+  color: pink;
+}
+.footer-menu ul li {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  margin-left: 10px;
+}
+.footer-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+#back-to-top {
+  padding: 15px 20px;
+  color: #34c6d3;
+  border: 2px solid #34c6d3;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: transparent;
+  transition: 0.3s;
+}
+#back-to-top:hover {
+  background-color: #34c6d3;
+  color: #fff;
+  border-color: #34c6d3;
 }
