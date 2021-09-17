@@ -8,9 +8,37 @@ body {
   scroll-behavior: smooth;
 }
 .container {
-  width: 1150px;
+  width: 80%;
   margin: 0 auto;
   padding: 20px 0px;
+}
+.btn-main {
+  padding: 12px 25px;
+  border: 2px solid;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-white {
+  color: #fff;
+  transition: 0.3s;
+}
+.btn-white:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #64707b;
+}
+.btn-cyan {
+  color: #34c6d3;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.btn-cyan:hover {
+  background-color: #34c6d3;
+  color: #fff;
+  border-color: #34c6d3;
 }
 header {
   background-image: url(../img/bg-home.jpg);
@@ -51,34 +79,6 @@ nav {
   color: #fff;
   font-size: 55px;
   margin-top: 150px;
-}
-.btn-main {
-  padding: 12px 25px;
-  border: 2px solid;
-  background-color: transparent;
-  text-transform: uppercase;
-  font-family: inherit;
-  font-size: 16px;
-  cursor: pointer;
-}
-.btn-white {
-  color: #fff;
-  transition: 0.3s;
-}
-.btn-white:hover {
-  background-color: #fff;
-  border-color: #fff;
-  color: #64707b;
-}
-.btn-cyan {
-  color: #34c6d3;
-  background-color: transparent;
-  transition: 0.3s;
-}
-.btn-cyan:hover {
-  background-color: #34c6d3;
-  color: #fff;
-  border-color: #34c6d3;
 }
 
 /* Service part css */
@@ -263,7 +263,7 @@ textarea {
   justify-content: space-between;
 }
 .copyright p {
-  color: pink;
+  color: #fff;
 }
 .footer-menu ul li {
   list-style: none;
