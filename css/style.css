@@ -63,7 +63,18 @@ nav {
 }
 .btn-white:hover {
   background-color: #fff;
+  border-color: #fff;
   color: #64707b;
+}
+.btn-cyan {
+  color: #34c6d3;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.btn-cyan:hover {
+  background-color: #34c6d3;
+  color: #fff;
+  border-color: #34c6d3;
 }
 
 /* Service part css */
@@ -97,4 +108,91 @@ nav {
 .service-icon {
   margin-right: 40px;
   color: #34c6d3;
+}
+#about {
+  background-image: url(../img/bg-about.jpg);
+  height: 100vh;
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#about .section-title h3 {
+  text-align: left;
+}
+#about .section-title-underline {
+  margin-left: 0;
+}
+
+.about-container {
+  background: #fff;
+  height: 100vh;
+  clip-path: polygon(0 0, 42% 0, 58% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+}
+.about-left {
+  width: 40%;
+}
+
+.work-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.work-item {
+  overflow: hidden;
+}
+.work-item img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.work-item img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 50px;
+}
+.price-box {
+  border: 3px solid #34c6d3;
+  text-align: center;
+  padding: 50px 0px;
+  margin: 40px 0px;
+}
+.price-title {
+  padding: 7px 15px;
+  background-color: #34c6d3;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.price-value {
+  font-size: 60px;
+  color: #41464b;
+  font-weight: 700;
+}
+.price-value sup {
+  font-weight: 400;
+  font-size: 30px;
+}
+.price-box-large {
+  background-color: #34c6d3;
+  padding: 90px 0;
+  margin: 0px;
+}
+.price-box-large .price-title {
+  background-color: white;
+  color: #34c6d3;
+}
+.price-paragraph {
+  margin-bottom: 50px;
 }
